@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>MLN Portal Registration</title>
+</head>
+<body>
+
+  <div id='app' ng-app='app' ng-controller='mainCtrl'>
+
+ <h1> Please fill out the form </h1>
+ <form id="newUser" ng-submit="addUser()">
+   First Name: <input type="text" ng-model="fName"> <br>
+   Last Name: <input type="text" ng-model="lName"> <br>
+   Email Address: <input type="email" ng-model="email"> <br>
+   Username: <input type="text" ng-model="uName"> <br>
+   Password: <input type="text" ng-model="password"> <br>
+   Address Line 1: <input type="text" ng-model="addr1"> 
+   Address Line 2: <input type="text" ng-model="addr2"> <br>
+   City: <input type="text" ng-model="city"> <br>
+   State/Province: <input type="text" ng-model="state"> <br>
+   Zip: <input type="number" ng-model="zip"> <br>
+   Country: <input type="text" ng-model="country"> <br>
+   Mobile Phone: <input type="number" ng-model="mPhone"> <br>
+   (Opt) Other Phone: <input type="number" ng-model="otherPhone"> <br>
+   (Opt) Coupon Code: <input type="number" ng-model="code"> <br>
+   (Opt) Profile Picture: <input type="button" onclick="addImage()" value="Upload" ng-model="pic"> <br>
+
+   <input type="submit" value="Submit">
+ </form>
+
+</body>
+</html>
+
+
